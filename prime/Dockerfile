@@ -4,4 +4,4 @@ RUN javac PrimeChecker.java
 
 FROM openjdk:8-jre-alpine
 COPY --from=build PrimeChecker.class PrimeChecker.class
-ENTRYPOINT ["java", "PrimeChecker"]
+ENTRYPOINT ["java", "PrimeChecker.java"]
